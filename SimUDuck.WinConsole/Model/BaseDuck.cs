@@ -14,6 +14,11 @@ namespace SimUDuck.WinConsole.Model
             Console.WriteLine("Swim");
         }
 
+        public void Fly()
+        {
+            Console.WriteLine("Fly");
+        }
+
         public abstract void Display();
     }
 }
