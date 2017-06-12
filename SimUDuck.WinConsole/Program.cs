@@ -25,14 +25,11 @@ namespace SimUDuck.WinConsole
             rubberDuck.Display();
             rubberDuck.Quack();
             rubberDuck.Swim();
-            rubberDuck.Fly();
             Console.WriteLine();
 
             var decoyDuck = new DecoyDuck();
             decoyDuck.Display();
-            decoyDuck.Quack();
             decoyDuck.Swim();
-            decoyDuck.Fly();
             Console.WriteLine();
 
             Console.Write("Press Enter to exit ...");
