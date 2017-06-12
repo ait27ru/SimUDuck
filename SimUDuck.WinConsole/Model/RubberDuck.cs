@@ -14,5 +14,10 @@ namespace SimUDuck.WinConsole.Model
             // Rubber ducks don't quack, so it is overriden to squeak
             Console.WriteLine("Squeak");
         }
+
+        public new void Fly()
+        {
+            // Rubber ducks don't fly either, so it is overriden to do nothing
+        }
     }
 }
