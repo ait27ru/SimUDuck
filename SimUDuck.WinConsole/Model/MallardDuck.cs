@@ -1,18 +1,14 @@
 ﻿using System;
-using SimUDuck.WinConsole.Interface;
+using SimUDuck.WinConsole.Behavior;
 
 namespace SimUDuck.WinConsole.Model
 {
-    public class MallardDuck : BaseDuck, IQuackable, IFlyable
+    public class MallardDuck : BaseDuck
     {
-        public void Fly()
+        public MallardDuck()
         {
-            Console.WriteLine("Fly");
-        }
-
-        public void Quack()
-        {
-            Console.WriteLine("Quack");
+            FlyBehavior = new FlyWithWings();
+            QuackBehavior = new NormalQuack();
         }
 
         public override void Display()

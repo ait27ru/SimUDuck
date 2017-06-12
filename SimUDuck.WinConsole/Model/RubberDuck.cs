@@ -1,14 +1,14 @@
 ﻿using System;
-using SimUDuck.WinConsole.Interface;
+using SimUDuck.WinConsole.Behavior;
 
 namespace SimUDuck.WinConsole.Model
 {
-    public class RubberDuck : BaseDuck, IQuackable
+    public class RubberDuck : BaseDuck
     {
-        public void Quack()
+        public RubberDuck()
         {
-            // Rubber ducks don't quack, so it is overriden to squeak
-            Console.WriteLine("Squeak");
+            FlyBehavior = new FlyNoWay();
+            QuackBehavior = new Squeak();
         }
 
         public override void Display()

@@ -43,6 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Behavior\FlyNoWay.cs" />
+    <Compile Include="Behavior\FlyWithWings.cs" />
+    <Compile Include="Behavior\MuteQuack.cs" />
+    <Compile Include="Behavior\NormalQuack.cs" />
+    <Compile Include="Behavior\Squeak.cs" />
     <Compile Include="Interface\IFlyable.cs" />
     <Compile Include="Interface\IQuackable.cs" />
     <Compile Include="Model\BaseDuck.cs" />

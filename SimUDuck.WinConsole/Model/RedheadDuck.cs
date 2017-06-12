@@ -1,18 +1,14 @@
 ﻿using System;
-using SimUDuck.WinConsole.Interface;
+using SimUDuck.WinConsole.Behavior;
 
 namespace SimUDuck.WinConsole.Model
 {
-    public class RedheadDuck : BaseDuck, IQuackable, IFlyable
+    public class RedheadDuck : BaseDuck
     {
-        public void Fly()
+        public RedheadDuck()
         {
-            Console.WriteLine("Fly");
-        }
-
-        public void Quack()
-        {
-            Console.WriteLine("Quack");
+            FlyBehavior = new FlyWithWings();
+            QuackBehavior = new NormalQuack();
         }
 
         public override void Display()

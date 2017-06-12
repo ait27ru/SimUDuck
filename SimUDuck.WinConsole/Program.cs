@@ -9,22 +9,23 @@ namespace SimUDuck.WinConsole
         {
             var mallardDuck = new MallardDuck();
             mallardDuck.Display();
-            mallardDuck.Quack();
+            mallardDuck.PerformQuack();
             mallardDuck.Swim();
-            mallardDuck.Fly();
+            mallardDuck.PerformFly();
             Console.WriteLine();
 
             var redheadDuck = new RedheadDuck();
             redheadDuck.Display();
-            redheadDuck.Quack();
+            redheadDuck.PerformQuack();
             redheadDuck.Swim();
-            redheadDuck.Fly();
+            redheadDuck.PerformFly();
             Console.WriteLine();
 
             var rubberDuck = new RubberDuck();
             rubberDuck.Display();
-            rubberDuck.Quack();
+            rubberDuck.PerformQuack();
             rubberDuck.Swim();
+            rubberDuck.PerformFly();
             Console.WriteLine();
 
             var decoyDuck = new DecoyDuck();
