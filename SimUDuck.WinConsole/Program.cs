@@ -1,4 +1,5 @@
-﻿using SimUDuck.WinConsole.Model;
+﻿using System;
+using SimUDuck.WinConsole.Model;
 
 namespace SimUDuck.WinConsole
 {
@@ -8,9 +9,16 @@ namespace SimUDuck.WinConsole
         {
             var mallardDuck = new MallardDuck();
             mallardDuck.Display();
+            mallardDuck.Quack();
+            mallardDuck.Swim();
 
             var redheadDuck = new RedheadDuck();
             redheadDuck.Display();
+            redheadDuck.Quack();
+            redheadDuck.Swim();
+
+            Console.Write("Press Enter to exit ...");
+            Console.ReadLine();
         }
     }
 }

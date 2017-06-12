@@ -1,15 +1,17 @@
-﻿namespace SimUDuck.WinConsole.Model
+﻿using System;
+
+namespace SimUDuck.WinConsole.Model
 {
     public abstract class BaseDuck
     {
-        public string Quack()
+        public void Quack()
         {
-            return "Quack";
+            Console.WriteLine("Quack");
         }
 
-        public string Swim()
+        public void Swim()
         {
-            return "Swim";
+            Console.WriteLine("Swim");
         }
 
         public abstract void Display();

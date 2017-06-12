@@ -6,7 +6,7 @@ namespace SimUDuck.WinConsole.Model
     {
         public override void Display()
         {
-            Console.WriteLine("Redhead Duck");
+            Console.WriteLine("Hi there, I'm a Redhead Duck");
         }
     }
 }
