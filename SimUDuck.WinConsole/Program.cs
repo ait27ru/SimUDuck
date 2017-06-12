@@ -1,15 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using SimUDuck.WinConsole.Model;
 
 namespace SimUDuck.WinConsole
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
+            var mallardDuck = new MallardDuck();
+            mallardDuck.Display();
+
+            var redheadDuck = new RedheadDuck();
+            redheadDuck.Display();
         }
     }
 }
